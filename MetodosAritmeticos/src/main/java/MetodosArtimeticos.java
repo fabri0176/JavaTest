@@ -26,5 +26,17 @@ public class MetodosArtimeticos {
         
         System.err.println("El area del rectangulo es: "+area);
         System.out.println("El perimetro del rectangulo es: "+perimetro);
+        
+        if(perimetro > area){
+            System.out.println("El perimetro es mayor que el area");
+        }else if(perimetro < area){
+            System.out.println("El perimetro es menor que el area");
+        }else{
+            System.out.println("El perimetro es igual al area");
+        }
+        
+        boolean var1 = (true)?false:true;
+        System.out.println(var1);
+        
     }
 }
