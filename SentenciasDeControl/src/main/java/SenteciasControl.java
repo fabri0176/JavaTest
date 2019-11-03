@@ -30,5 +30,6 @@ public class SenteciasControl {
         }else{
             System.out.println("Error");
         }
+        
     }
 }
