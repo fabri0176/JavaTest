@@ -32,7 +32,18 @@ public class HolaMundo {
         char c = "hola".charAt(2);
         System.out.println("El caracter c es " +c);
         System.out.println("---------------------------------------------------");
-        
+        System.out.println("Cual es su edad?");
+        char a = scanner.nextLine().charAt(0);
+        System.out.println(a);
         System.out.println("---------------------------------------------------");
+        System.out.println(String.valueOf(25));
+        System.out.println(String.valueOf(true));
+        
+                
+                
+                
+                
+        
+        
     }
 }
