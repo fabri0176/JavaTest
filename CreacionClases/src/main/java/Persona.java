@@ -28,6 +28,19 @@ public class Persona {
     }
     
     public void showFullName(){
-        System.out.println(("Nombre Completo: "+this.nombres+" "+this.apellidos).trim());
+        String fullName = ("Nombre Completo: "+this.nombres+" "+this.apellidos).trim();
+        System.out.println(fullName);
     }
+    
+    public void setNombres(String nombres){
+        this.nombres = nombres;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    
 }
