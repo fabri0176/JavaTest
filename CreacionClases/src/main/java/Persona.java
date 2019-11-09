@@ -41,6 +41,11 @@ public class Persona {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
     
+    public String getNombres(){
+        return this.nombres;
+    }
     
-    
+    public void setApellidos(String apellidos){
+         this.apellidos = apellidos;
+    }
 }

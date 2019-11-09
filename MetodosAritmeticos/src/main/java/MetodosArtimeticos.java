@@ -38,5 +38,7 @@ public class MetodosArtimeticos {
         boolean var1 = (true)?false:true;
         System.out.println(var1);
         
+        System.out.println();
+        
     }
 }

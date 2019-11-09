@@ -33,7 +33,9 @@ public class PruebaAritmetica {
         Aritmetica pruebaAritmetica1 = new Aritmetica(a,b);
         int resultado = pruebaAritmetica1.sumar();
         
-        System.out.println("resultado = "+resultado);
+        System.out.println("resultado Suma = "+resultado);
+        System.out.println("resultado Multiplicación = "+pruebaAritmetica1.getMultiplicar());
+        System.out.println("resultado División = "+pruebaAritmetica1.getDivison());
     }
     
 }

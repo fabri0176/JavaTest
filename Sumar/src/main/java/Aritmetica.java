@@ -9,6 +9,7 @@
  * @author Kathe15ortega12
  */
 public class Aritmetica {
+
     private int a;
     private int b;
 
@@ -16,17 +17,27 @@ public class Aritmetica {
         this.a = 0;
         this.b = 0;
     }
-    
-    public Aritmetica(int a, int b){
+
+    public Aritmetica(int a, int b) {
         this.a = a;
-    this.b = a;
+        this.b = a;
     }
-   
-    
+
     int sumar() {
-        int resultado =  this.a + this.b;
+        int resultado = this.a + this.b;
         return resultado;
     }
+
+    int multiplicar() {
+        return this.a * this.b;
+    }
+
+    String getMultiplicar() {
+
+        return Integer.toString(this.multiplicar());
+    }
     
-    
+    String getDivison(){
+        return Float.toString((float)(this.a)/(float)this.b);
+    }
 }

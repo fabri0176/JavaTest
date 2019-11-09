@@ -18,7 +18,11 @@ public class PruebaPersona {
           personaDos.apellidos = "Ortega";
           
           personaUno.showFullName();
+          personaUno.getNombres();
           personaDos.showFullName();
+          
+          
+          
           
           
       }
