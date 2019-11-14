@@ -20,7 +20,7 @@ public class Aritmetica {
 
     public Aritmetica(int a, int b) {
         this.a = a;
-        this.b = a;
+        this.b = b;
     }
 
     int sumar() {
@@ -38,6 +38,8 @@ public class Aritmetica {
     }
     
     String getDivison(){
-        return Float.toString((float)(this.a)/(float)this.b);
+        float resultadoDivision = (float)this.a/this.b;
+        
+        return Float.toString(resultadoDivision);
     }
 }

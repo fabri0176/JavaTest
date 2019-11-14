@@ -21,7 +21,7 @@ public class PruebaAritmetica {
         
         
         for(int i=1;i<=2;i++){
-            System.out.println(i+". Ingrese el valor a sumar: ");
+            System.out.println(i+". Ingrese el valor : ");
             if(i==1){
                 a = scanner.nextInt();
             }else if(i==2){
