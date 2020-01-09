@@ -32,4 +32,10 @@ public class SenteciasControl {
         }
         
     }
+    
+    public static void imprimir(Object o){
+        System.out.println(o);
+    }
+    
+    
 }
