@@ -14,12 +14,15 @@ public class Persona {
     private char genero;
     private int edad;
     private String direccion;
+    private int contadorPersona;
+    private int personaId;
     
-    public Persona(){
-        
+    private Persona(){
+        this.personaId = ++contadorPersona;
     }
     
     public Persona(String nombre){
+        this();
         this.nombre = nombre;
     }
     
