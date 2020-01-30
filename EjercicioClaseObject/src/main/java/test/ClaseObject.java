@@ -38,5 +38,6 @@ public class ClaseObject {
         }
         
         //Revisión metodo hasCode
+        
     }
 }
