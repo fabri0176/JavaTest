@@ -17,7 +17,7 @@ public class Cliente extends Persona {
     private boolean valid;
     private static int contadorCliente;
 
-    public Cliente(Date fechaRegistro, boolean valid) {
+    public Cliente(Date fechaRegistro) {
 
         this.fechaRegistro = fechaRegistro;
         this.valid = valid;
