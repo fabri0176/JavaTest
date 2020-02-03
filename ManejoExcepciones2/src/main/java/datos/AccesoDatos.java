@@ -5,6 +5,8 @@
  */
 package datos;
 
+import excepciones.AccesoDatosEx;
+
 /**
  *
  * @author fabricio
@@ -16,9 +18,12 @@ public interface AccesoDatos {
     //
     public static final int MIN_REGISTROS = 1;
     
-    public abstract void insertar();
+    public abstract void insertar() throws AccesoDatosEx;
     
-    public abstract void listar();
+    public abstract void listar() throws AccesoDatosEx;
+    
+    
+    public abstract void simularError(boolean simularError);
     
     
 }

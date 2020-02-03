@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package domain;
+package excepciones;
 
 /**
  *
  * @author fabricio
  */
-public class OperacionExcepcion extends Exception{
-    public  OperacionExcepcion(String mensaje){
+public class EscrituraDatosEx extends AccesoDatosEx{
+    public EscrituraDatosEx(String mensaje){
         super(mensaje);
     }
 }

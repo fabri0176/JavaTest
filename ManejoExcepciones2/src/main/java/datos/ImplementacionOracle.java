@@ -1,16 +1,39 @@
-
 package datos;
 
-public class ImplementacionOracle implements AccesoDatos{
+import excepciones.AccesoDatosEx;
+import excepciones.LecturaDatosEx;
+
+public class ImplementacionOracle implements AccesoDatos {
+
+    private boolean simularError;
 
     @Override
-    public void insertar() {
-        System.out.println("Insertar desde Oracle");
+    public void insertar() throws AccesoDatosEx {
+        if (isSimularError()) {
+            throw new LecturaDatosEx("Error escritura de datos");
+        } else {
+            System.out.println("Insertar desde Oracle");
+        }
+
     }
 
     @Override
-    public void listar() {
-        System.out.println("Listar desde Oracle");
+    public void listar() throws AccesoDatosEx {
+        if (isSimularError()) {
+            throw new LecturaDatosEx("Error escritura de datos");
+        } else {
+            System.out.println("Listar desde Oracle");
+        }
+
     }
-    
+
+    @Override
+    public void simularError(boolean simularError) {
+        this.simularError = simularError;
+    }
+
+    public boolean isSimularError() {
+        return this.simularError;
+    }
+
 }
